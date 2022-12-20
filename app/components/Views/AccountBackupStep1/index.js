@@ -231,7 +231,7 @@ const AccountBackupStep1 = (props) => {
             <Text style={styles.title}>
               {strings('account_backup_step_1.title')}
             </Text>
-            <SeedPhraseVideo onClose={skip} />
+            {/* <SeedPhraseVideo onClose={skip} /> */}
             <View style={styles.text}>
               <Text style={styles.label}>
                 {strings('account_backup_step_1.info_text_1_1')}{' '}

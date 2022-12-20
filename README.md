@@ -61,7 +61,7 @@ sudo gem install cocoapods
         -   You do **not** need CocoaPods
 -   Install the correct simulator
     -   **iOS OS Version:** Latest, unless told otherwise
-    -   **Device:** iPhone 11 Pro
+    -   **Device:** iPhone 14 Pro
 
 
 

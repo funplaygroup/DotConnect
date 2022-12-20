@@ -430,6 +430,7 @@ class Onboarding extends PureComponent {
             {strings('onboarding.import')}
           </Text>
         </View>
+
         <View style={styles.createWrapper}>
           <View style={styles.buttonWrapper}>
             <StyledButton
@@ -441,7 +442,7 @@ class Onboarding extends PureComponent {
             </StyledButton>
           </View>
           {/* Temporarily Disable Sync until the new improved version is ready for release */}
-          {__DEV__ && (
+          {/* {__DEV__ && (
             <View style={styles.buttonWrapper}>
               <StyledButton
                 style={styles.button}
@@ -452,7 +453,7 @@ class Onboarding extends PureComponent {
                 {strings('import_wallet.sync_from_browser_extension_button')}
               </StyledButton>
             </View>
-          )}
+          )} */}
           <View style={styles.buttonWrapper}>
             <StyledButton
               type={'blue'}

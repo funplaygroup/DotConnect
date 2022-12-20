@@ -428,7 +428,7 @@ const App = ({ userLoggedIn }) => {
             />
           </Stack.Navigator>
         </NavigationContainer>
-        {renderSplash()}
+        {/* {renderSplash()} */}
         <Toast ref={toastRef} />
       </>
     )) ||
