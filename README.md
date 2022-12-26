@@ -1,16 +1,12 @@
 ![MetaMask logo](logo.png?raw=true)
 
-# MetaMask
+# DotConnect - NFT friendly wallet
 
-[![CI](https://github.com/MetaMask/metamask-mobile/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MetaMask/metamask-mobile/actions/workflows/ci.yml) [![CLA](https://github.com/MetaMask/metamask-mobile/actions/workflows/cla.yml/badge.svg?branch=main)](https://github.com/MetaMask/metamask-mobile/actions/workflows/cla.yml)
+DotConnect is a mobile wallet that provides easy access to websites that use the Polkadot，Web3Games and EVM chains.
 
-MetaMask is a mobile wallet that provides easy access to websites that use the [Ethereum](https://ethereum.org/) blockchain.
 
-For up to the minute news, follow our [Twitter](https://twitter.com/metamask) or [Medium](https://medium.com/metamask) pages.
 
-To learn how to develop MetaMask-compatible applications, visit our [Developer Docs](https://docs.metamask.io).
-
-## MetaMask Mobile
+## DotConnect 
 
 
 ### Environment Setup
@@ -38,7 +34,6 @@ sudo gem install cocoapods
 #### Android
 
 -   Install the Android SDK, via [Android Studio](https://developer.android.com/studio).
-    -   _MetaMask Only:_ To create production builds, you need to install Google Play Licensing Library via the SDK Manager in Android Studio.
 -   Install the Android NDK, via [Android Studio](https://developer.android.com/studio)'s SDK Manager.
     -   In the SDK Manager, select the `SDK Tools` tab and install NDK version `21.4.7075529`. You'll need to click "Show Package Details" in order to select the appropriate version.
 -   Linux only:
@@ -70,17 +65,10 @@ sudo gem install cocoapods
 -   Clone this repo:
 ```bash
 git clone ...
-cd metamask-mobile
+cd DotConnect
 ```
 
--   _MetaMask Only:_ Rename the `.*.env.example` files (remove the `.example`) in the root of the project and fill in the appropriate values for each key. Get the values from another MetaMask Mobile developer.
--   _Non-MetaMask Only:_ In the project root folder run
-```
-  cp .ios.env.example .ios.env && \
-  cp .android.env.example .android.env && \
-  cp .js.env.example .js.env
-```
--   _Non-MetaMask Only:_ Create an account and generate your own API key at [Infura](https://infura.io) in order to connect to main and test nets. Fill `MM_INFURA_PROJECT_ID` in `.js.env`. (App will run without it, but will not be able to connect to actual network.)
+
 
 -   Install the app:
 ```
@@ -211,10 +199,8 @@ Whenever you change dependencies (adding, removing, or updating, either in `pack
     -   Run `yarn allow-scripts auto` to update the `allow-scripts` configuration automatically. This config determines whether the package's install/postinstall scripts are allowed to run. Review each new package to determine whether the install script needs to run or not, testing if necessary.
     -   Unfortunately, `yarn allow-scripts auto` will behave inconsistently on different platforms. macOS and Windows users may see extraneous changes relating to optional dependencies.
 
-### Architecture
 
-To get a better understanding of the internal architecture of this app take a look at [this diagram](https://github.com/MetaMask/metamask-mobile/blob/main/architecture.svg).
 
-### Storybook
 
-We have begun documenting our components using storybook please read the [Documentation Guidelines](./storybook/DOCUMENTATION_GUIDELINES.md) to get up and running.
+
+
