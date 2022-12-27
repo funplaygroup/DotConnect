@@ -975,13 +975,13 @@ class DrawerView extends PureComponent {
     }
     return [
       [
-        {
-          name: strings('drawer.browser'),
-          icon: this.getIcon('globe'),
-          selectedIcon: this.getSelectedIcon('globe'),
-          action: this.goToBrowser,
-          routeNames: ['BrowserView', 'AddBookmark'],
-        },
+        // {
+        //   name: strings('drawer.browser'),
+        //   icon: this.getIcon('globe'),
+        //   selectedIcon: this.getSelectedIcon('globe'),
+        //   action: this.goToBrowser,
+        //   routeNames: ['BrowserView', 'AddBookmark'],
+        // },
         {
           name: strings('drawer.wallet'),
           icon: this.getImageIcon('wallet'),
@@ -995,13 +995,14 @@ class DrawerView extends PureComponent {
             'Collectible',
           ],
         },
-        {
-          name: strings('drawer.transaction_activity'),
-          icon: this.getFeatherIcon('list'),
-          selectedIcon: this.getSelectedFeatherIcon('list'),
-          action: this.goToTransactionHistory,
-          routeNames: ['TransactionsView'],
-        },
+
+        // {
+        //   name: strings('drawer.transaction_activity'),
+        //   icon: this.getFeatherIcon('list'),
+        //   selectedIcon: this.getSelectedFeatherIcon('list'),
+        //   action: this.goToTransactionHistory,
+        //   routeNames: ['TransactionsView'],
+        // },
       ],
       [
         {
@@ -1009,14 +1010,14 @@ class DrawerView extends PureComponent {
           icon: this.getMaterialIcon('share-variant'),
           action: this.onShare,
         },
-        {
-          name:
-            (blockExplorer &&
-              `${strings('drawer.view_in')} ${blockExplorerName}`) ||
-            strings('drawer.view_in_etherscan'),
-          icon: this.getIcon('eye'),
-          action: this.viewInEtherscan,
-        },
+        // {
+        //   name:
+        //     (blockExplorer &&
+        //       `${strings('drawer.view_in')} ${blockExplorerName}`) ||
+        //     strings('drawer.view_in_etherscan'),
+        //   icon: this.getIcon('eye'),
+        //   action: this.viewInEtherscan,
+        // },
       ],
       [
         {
@@ -1026,16 +1027,16 @@ class DrawerView extends PureComponent {
           action: this.showSettings,
           testID: DRAWER_VIEW_SETTINGS_TEXT_ID,
         },
-        {
-          name: strings('drawer.help'),
-          icon: this.getIcon('comments'),
-          action: this.showHelp,
-        },
-        {
-          name: strings('drawer.request_feature'),
-          icon: this.getFeatherIcon('message-square'),
-          action: this.submitFeedback,
-        },
+        // {
+        //   name: strings('drawer.help'),
+        //   icon: this.getIcon('comments'),
+        //   action: this.showHelp,
+        // },
+        // {
+        //   name: strings('drawer.request_feature'),
+        //   icon: this.getFeatherIcon('message-square'),
+        //   action: this.submitFeedback,
+        // },
         {
           name: strings('drawer.lock'),
           icon: this.getFeatherIcon('log-out'),
