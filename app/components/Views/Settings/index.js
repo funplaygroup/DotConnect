@@ -100,7 +100,7 @@ class Settings extends PureComponent {
   };
 
   render = () => {
-    const { seedphraseBackedUp } = this.props;
+    // const { seedphraseBackedUp } = this.props;
     const colors = this.context.colors || mockTheme.colors;
     const styles = createStyles(colors);
 
@@ -111,12 +111,12 @@ class Settings extends PureComponent {
           onPress={this.onPressGeneral}
           title={strings('app_settings.general_title')}
         />
-        <SettingsDrawer
+        {/* <SettingsDrawer
           description={strings('app_settings.security_desc')}
           onPress={this.onPressSecurity}
           title={strings('app_settings.security_title')}
           warning={!seedphraseBackedUp}
-        />
+        /> */}
         <SettingsDrawer
           description={strings('app_settings.advanced_desc')}
           onPress={this.onPressAdvanced}
@@ -132,15 +132,15 @@ class Settings extends PureComponent {
           description={strings('app_settings.networks_desc')}
           onPress={this.onPressNetworks}
         />
-        <SettingsDrawer
+        {/* <SettingsDrawer
           title={strings('app_settings.experimental_title')}
           description={strings('app_settings.experimental_desc')}
           onPress={this.onPressExperimental}
-        />
-        <SettingsDrawer
+        /> */}
+        {/* <SettingsDrawer
           title={strings('app_settings.info_title')}
           onPress={this.onPressInfo}
-        />
+        /> */}
       </ScrollView>
     );
   };
